@@ -642,7 +642,7 @@ display: inline-block;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- grid-auto-rows: calc(33.3333vh - 4 * 10px / 3) ;
+  grid-auto-rows: calc(33.3333vh - 4 * 10px / 3) ;
   grid-gap: 10px;
   grid-template-areas: "a1 a1 a2 a3"
                        "a4 a5 a5 a6"
@@ -656,14 +656,12 @@ display: inline-block;
 
 }
 .skill-item {
-  background-color: red;
+  background-color: #2d3651;
   min-height: calc(33.3333vh - 4 * 10px / 3);
+  position: relative;
+  overflow: hidden;
 }
-@media (max-height:640px){
-  .skill-item{
-    min-height: 200px;
-  }
-}
+
 .skill-item:nth-of-type(1){
   grid-area: a1 ;
 }
@@ -691,18 +689,91 @@ display: inline-block;
 .skill-item:nth-of-type(9){
   grid-area: a9 ;
 }
-.skill-item__overlay {
 
+.skill-item:hover .skill-item__overlay{
+  opacity: 0.95;
+}
+.skill-item:hover .skill-item__image{
+ transform: scale(1.1);
+ 
+}
+.skill-item:hover .skill-item__link{
+ color: #d66926;
+}
+.skill-item__overlay {
+  background-color: #2d3651;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.8;
+  transition: opacity 0.5s;
 }
 .skill-item__image {
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: transform 0.5s;
 }
 .skill-item__title {
   margin: 0;
-
-
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  
 }
 .skill-item__link  {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   padding: 20px;
+  transition: color 0.5s;
+}
+@media (max-width: 992px ){
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a1 a1 a2"
+                         "a3 a4 a4"
+                         "a5 a5 a6"
+                         "a7 a8 a6"
+                         "a7 a9 a9";
+  }
+}
+@media (max-width: 768px ){
+  .skills__container {
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a1 a2"
+                         "a3 a2"
+                         "a4 a4"
+                         "a5 a6"
+                         "a5 a7"
+                         "a8 a9";
+  }
+}
+@media (max-width: 576px ){
+  .skill{
+    padding: 20px;
+  }
+  .skills__container {
+    grid-template-columns:  1fr;
+    grid-template-areas: "a1"  "a2"  "a3"  "a4" "a5" "a6" "a7" "a8" "a9";
+    grid-gap: 20px;
+  }
+}
+@media (max-height:640px){
+  .skills__container{
+    grid-auto-rows: 200px ;
+  }
 }
