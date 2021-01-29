@@ -75,7 +75,6 @@ function watchFiles() {
   syncInit();
   watch(path.scssFiles, series(scss));
   watch(path.htmlFiles, sync);
-  watch(path.cssFiles, sync);
   watch(path.jsFiles, sync);
 }
 
