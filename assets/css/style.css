@@ -474,6 +474,7 @@ html {
   color: #637588;
   overflow-y: scroll;
   letter-spacing: 0.1em;
+  /* line-height: 1.5em; */
 }
 /* HEADER */
 h1{
@@ -483,6 +484,12 @@ h1{
   font-family: 'Roboto Slab', serif;
   text-align: center;
   line-height: 1.2;
+}
+h2{
+  color: #2d3651;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  font-size: 40px;
 }
 
 a {
@@ -652,7 +659,8 @@ display: inline-block;
 .skills__action{
   display: flex;
   justify-content: center;
-  margin-bottom: 30xp;
+  margin-bottom: 30px;
+  
 
 }
 .skill-item {
@@ -743,9 +751,27 @@ display: inline-block;
 /* ABOUT */
 .about{
   background-color: rgb(229, 229, 229);
+  
 }
-.about-container{}
-.about-item{}
+.about-container{ 
+  padding: 100px 0;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-gap: 93px;
+  grid-template-areas: "w1  w2";
+}
+.about-item{
+  position: relative;
+  margin-top: -5px;
+  font-size: 18px;
+}
+.about-item:nth-of-type(1){
+  grid-area: w1 ;
+}
+.about-item:nth-of-type(2){
+  grid-area: w2 ;
+}
 .about-item__titel{}
 .about-item__text{}
 .about-item__image{}
