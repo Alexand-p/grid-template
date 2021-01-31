@@ -506,19 +506,23 @@ a {
   border: 2px solid #ffffff;
   min-width: 250px;
 }
+/* .btn-forma, */
 .btn-accent,
 .btn{
   font-size: 1.125rem;
   display: block;
   padding: 18px;
   height: 60px;
-  
   text-align: center;
   transition:  background-color 0.5s;
 }
 .btn:hover,
+.btn-forma:hover,
 .btn-accent:hover{
   background-color: #d66926;
+}
+.btn-forma:hover{
+  border: 2px solid #ffffff;
 }
 
 .header{
@@ -556,6 +560,7 @@ a {
   display: grid;
   grid-template-columns: auto 1fr;
 }
+.forma-container,
 .header-content__container,
 .header-menu__container,.about-container{
   max-width: 1340px;
@@ -755,7 +760,7 @@ display: inline-block;
 }
 .about-container{ 
   padding: 100px 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: grid;
   grid-template-columns:  1fr;
   grid-gap: 93px;
@@ -772,9 +777,65 @@ display: inline-block;
 .about-item:nth-of-type(2){
   grid-area: w2 ;
 }
-.about-item__titel{}
+/* .about-item__titel{}
 .about-item__text{}
-.about-item__image{}
+.about-item__image{} */
+
+/* FORMA */
+.forma{
+  background-color: #2d3651;
+}
+fieldset {
+  border:0 none
+}
+.forma-container{
+  padding: 0px;
+  display: grid;
+  grid-template-areas: "f1  f2  f3";
+  text-align: center;
+}
+.forma-item{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+.forma-item__name,
+.forma-item__email,
+.btn-forma{
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0);
+  font-size: 1.125rem;
+  min-height: 60px;
+  min-width: 420px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #38405a;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 1.5px;
+  color: #607188;
+}
+.forma-item__name{
+ grid-area: f1;
+}
+.forma-item__email{
+ grid-area: f2;
+}
+.btn-forma{
+  grid-area: f3;
+  background-color: #424a63;
+  padding: 18px;
+  text-align: center;
+  transition:  background-color 0.5s;
+  color: #ffffff;
+  transition:  background-color 0.5s, border 0.5s;
+}
+
+
+
+
+
+
 @media (max-width: 992px ){
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
