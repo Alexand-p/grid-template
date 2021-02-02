@@ -920,13 +920,7 @@ footer{
 .footer-item{
   
 }
-.footer-item__icon{
-  
-  width: 240px;
-  height: 50px;
-  /* background-color: red; */
-  color: #ffffff;
-}
+
 .footer-item__text{
   text-align: center;
 }
@@ -942,11 +936,15 @@ footer{
   color: #ffffff;
 }
 .footer-item__icon--link{
-  
+  padding: 10px;
 }
-.fab{
-  width: 37px;
-  height: 37px;
+.footer-item__icon{
+  display: flex;
+  justify-content: center;
+  min-width: 240px;
+  min-height: 50px;
+  color: #ffffff;
+  font-size: 2.25em;
 }
 .fab fa-facebook-square::before{
   content:f082 ;
@@ -963,8 +961,6 @@ footer{
 .fab fa-flick::before{
   content:f16e ;
 }
-
-
 
 @media (max-width: 992px ){
   .skills__container {
