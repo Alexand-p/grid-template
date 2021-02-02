@@ -924,8 +924,8 @@ footer{
   
   width: 240px;
   height: 50px;
-  background-color: red;
-
+  /* background-color: red; */
+  color: #ffffff;
 }
 .footer-item__text{
   text-align: center;
@@ -941,11 +941,29 @@ footer{
   margin-top: 0;
   color: #ffffff;
 }
-
-
-.fa-facebook-square:before {
-  content: "\f082";
+.footer-item__icon--link{
+  
 }
+.fab{
+  width: 37px;
+  height: 37px;
+}
+.fab fa-facebook-square::before{
+  content:f082 ;
+}
+.fab fa-pinterest-square::before{
+  content:f0d3 ;
+}
+.fab fa-twitter-square::before{
+  content:f081 ;
+}
+.fab fa-google-plus-square::before{
+  content:f0d4 ;
+}
+.fab fa-flick::before{
+  content:f16e ;
+}
+
 
 
 @media (max-width: 992px ){
