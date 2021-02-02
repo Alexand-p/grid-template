@@ -564,6 +564,7 @@ a {
   grid-template-columns: auto 1fr;
 }
 .post,
+.footer-container,
 .forma-container,
 .header-content__container,
 .header-menu__container,.about-container{
@@ -887,8 +888,8 @@ padding-bottom: 100px ;
 .post-item__block:nth-of-type(6){
   grid-area: p6 ;
 }
-.post-item__link{}
-.post-item__image{}
+/* .post-item__link{}
+.post-item__image{} */
 .post-item__action{
   /* grid-template-row: 20px 35px ; */
   /* justify-content: center;
@@ -906,9 +907,45 @@ font-size: 1.125em;
   color: #637588;
   text-align: center;
 }
-.post-btn__accent{}
+/* .post-btn__accent{} */
+footer{
+  background-color:#2d3651;
+}
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+.footer-item{
+  
+}
+.footer-item__icon{
+  
+  width: 240px;
+  height: 50px;
+  background-color: red;
+
+}
+.footer-item__text{
+  text-align: center;
+}
+.footer-item__text--app{
+  font-weight: 100;
+  letter-spacing: 5px;          
+  margin-bottom: 0;
+}
+.footer-item__text--down{
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 0;
+  color: #ffffff;
+}
 
 
+.fa-facebook-square:before {
+  content: "\f082";
+}
 
 
 @media (max-width: 992px ){
