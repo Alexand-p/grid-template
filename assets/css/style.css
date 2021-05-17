@@ -736,6 +736,7 @@ display: inline-block;
   right: 0;
   left: 0;
   transition: transform 0.5s;
+  background-repeat: no-repeat;
 }
 .skill-item__title {
   margin: 0;
@@ -908,6 +909,9 @@ font-size: 1.125em;
   color: #637588;
   text-align: center;
 }
+.post-item:hover .post-item__action{
+  color: #d8d8d8;
+}
 /* .post-btn__accent{} */
 footer{
   background-color:#2d3651;
@@ -947,6 +951,8 @@ footer{
   color: #ffffff;
   font-size: 2.25em;
 }
+
+
 .footer-item__icon::after {
   position: absolute;
   width: 75px;
@@ -970,6 +976,10 @@ footer{
 }
 .fab fa-flick::before{
   content:f16e ;
+}
+.fab:hover{
+  color:#d66926 ;
+  transition: color 0.7s;
 }
 
 @media (max-width: 992px ){
