@@ -835,12 +835,20 @@ fieldset {
 .forma-item__email{
  grid-area: f2;
 }
+.forma-item__name:hover{
+  background-color:#4C546B ;
+  transition: background-color 0.5s;
+}
+.forma-item__email:hover{
+  background-color:#4C546B ;
+  transition: background-color 0.5s;
+}
 .btn-forma{
   grid-area: f3;
   background-color: #424a63;
   padding: 18px;
   text-align: center;
-  transition:  background-color 0.5s;
+  /*transition:  background-color 0.5s;*/
   color: #ffffff;
   transition:  background-color 0.5s, border 0.5s;
 }
@@ -909,10 +917,20 @@ font-size: 1.125em;
   color: #637588;
   text-align: center;
 }
-.post-item:hover .post-item__action{
-  color: #d8d8d8;
+
+.post-item__block:hover {
+  background-color: #d8d8d8;
+  transition: background-color 0.5s;
 }
-/* .post-btn__accent{} */
+.post-item__link:hover .post-item__image img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+ .post-btn__accent{
+   width:354px;
+   margin: 0 auto;
+ }
+
 footer{
   background-color:#2d3651;
 }
@@ -979,7 +997,7 @@ footer{
 }
 .fab:hover{
   color:#d66926 ;
-  transition: color 0.7s;
+  transition: color 0.5s;
 }
 
 @media (max-width: 992px ){
