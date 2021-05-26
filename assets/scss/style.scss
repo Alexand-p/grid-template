@@ -354,15 +354,16 @@ a {
 
 /* FORMA */
 .forma{
+  min-height: 120px;
   background-color: #2d3651;
 }
 fieldset {
   border:0 none
 }
-form {
+.forma-container{
   display: grid;
   grid-template-areas: "f1  f2  f3";
-  text-align: center;
+  justify-content: center;
   grid-gap: 20px;
 }
 
@@ -378,7 +379,6 @@ form {
   font-size: 1.125rem;
   min-height: 60px;
   min-width: 420px;
-  padding-right: 30px;
   padding-left: 30px;
   background-color: #38405a;
   border-bottom-color: rgba(255, 255, 255, 0.25);
@@ -606,6 +606,22 @@ footer{
   .about-item__text{
     margin-left: 20px;
   }
+  .forma-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f2 f3"
+                         "f1 f1";
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  .forma-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
   .post-item{
     grid-template-columns: repeat(2, 1fr );
     grid-template-areas: "p1 p2 "
@@ -635,6 +651,27 @@ footer{
   }
   .about-item__img{
     text-align: center;
+  }
+  .forma-container{
+    max-height: 280px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "f1"  "f2"  "f3";
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .forma-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    min-width: 470px;
+  }
+  .forma-item__name,
+  .forma-item__email,
+  .btn-forma{
+    min-width: 470px;
   }
   .post-item{
     grid-template-columns: 1fr;
