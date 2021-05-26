@@ -359,19 +359,16 @@ a {
 fieldset {
   border:0 none
 }
-.forma-container{
-  padding: 0px;
+form {
   display: grid;
   grid-template-areas: "f1  f2  f3";
   text-align: center;
-  /* grid-gap: 20px; */
+  grid-gap: 20px;
 }
-.forma-item{
-  /* display: grid;
-  gap: 20px; */
+
+.forma-item {
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 .forma-item__name,
 .forma-item__email,
@@ -408,7 +405,6 @@ fieldset {
   background-color: #424a63;
   padding: 18px;
   text-align: center;
-  /*transition:  background-color 0.5s;*/
   color: #ffffff;
   transition:  background-color 0.5s, border 0.5s;
 }
