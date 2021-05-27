@@ -1214,15 +1214,22 @@ footer {
   }
   .forma-item__name,
   .forma-item__email,
-  .btn-forma {
-    min-width: 470px;
+  .btn-forma,
+  .btn-accent,
+  .post-btn__accent {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .post-item {
     grid-template-columns: 1fr;
     grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
-    /*min-width: 530px;*/
   }
   .post-item__image {
     text-align: center;
+  }
+  .post-item__picture {
+    width: 499px;
+    height: 335px;
   }
 }
