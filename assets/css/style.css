@@ -860,25 +860,29 @@ fieldset {
 .forma-container {
   display: grid;
   grid-template-areas: "f1  f2  f3";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-line-pack: normal;
+      align-content: normal;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
   grid-gap: 20px;
 }
 
 .forma-item {
   margin-top: 30px;
   margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .forma-item__name,
 .forma-item__email,
 .btn-forma {
-  display: inline-block;
   border: 2px solid rgba(255, 255, 255, 0);
   font-size: 1.125rem;
   min-height: 60px;
-  min-width: 100%;
+  width: 100%;
   padding-left: 30px;
   background-color: #38405a;
   border-bottom-color: rgba(255, 255, 255, 0.25);
@@ -1107,7 +1111,7 @@ footer {
   transition: color 0.5s;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1600px) {
   .about-item {
     margin-left: 20px;
   }
