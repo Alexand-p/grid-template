@@ -56,6 +56,26 @@ a {
   text-decoration: none;
   color: #ffffff ;
 }
+.btn--light{
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid #ffffff;
+@include lg-min{
+  font-size: 1.125rem;
+  min-width: 250px;
+  padding: 18px $gap;
+  height: 60px;
+}
+@include lg-md{
+  min-width: 200px;
+  padding: 14px $gap;
+  height: 50px;
+}
+@include md{
+  min-width: 170px;
+  padding: 9px $gap;
+  height: 40px;
+}
+}
 .post-btn__accent,
 .btn-accent{
   background-color: rgba(45,54,81,0.8);
@@ -65,7 +85,6 @@ a {
 .btn{
   background-color: rgba(255,255,255,0.1);
   border: 2px solid #ffffff;
-  min-width: 250px;
 }
 /* .btn-forma, */
 .post-btn__accent,
@@ -195,20 +214,19 @@ a {
 .header-content{
   position: relative;
   z-index: 1;
-
-
-
-
 }
 .header-content__title{
   margin: 0 0 53px 0;
 }
 .header-content__buttons{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .header-content__buttons .btn:first-of-type{
-  margin-right: 20px;
+  @include sm-min{
+    margin-right: $gap;
+  }
 }
 
 /* SKILLS */

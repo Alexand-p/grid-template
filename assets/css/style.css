@@ -463,6 +463,26 @@ template {
 /* sm */
 /* xs */
 /* xx */
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content__title {
+  margin: 0 0 53px;
+}
+
+.header-content__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -500,6 +520,11 @@ a {
   color: #ffffff;
 }
 
+.btn--light {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffffff;
+}
+
 .post-btn__accent,
 .btn-accent {
   background-color: rgba(45, 54, 81, 0.8);
@@ -510,7 +535,6 @@ a {
 .btn {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #ffffff;
-  min-width: 250px;
 }
 
 /* .btn-forma, */
@@ -663,13 +687,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.header-content__buttons .btn:first-of-type {
-  margin-right: 20px;
 }
 
 /* SKILLS */
@@ -1111,6 +1133,24 @@ footer {
   transition: color 0.5s;
 }
 
+@media (min-width: 576px) {
+  .header-content__buttons .btn:first-of-type {
+    margin-right: 20px;
+  }
+  .header-content__buttons .btn:first-of-type {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn--light {
+    font-size: 1.125rem;
+    min-width: 250px;
+    padding: 18px 20px;
+    height: 60px;
+  }
+}
+
 @media (max-width: 1600px) {
   .about-item {
     margin-left: 20px;
@@ -1135,6 +1175,22 @@ footer {
   .post-item__picture {
     width: 37.5rem;
     height: 21.875rem;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .btn--light {
+    min-width: 200px;
+    padding: 14px 20px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .btn--light {
+    min-width: 170px;
+    padding: 9px 20px;
+    height: 40px;
   }
 }
 
@@ -1191,6 +1247,18 @@ footer {
 }
 
 @media (max-width: 575.8px) {
+  .header-content__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-content__buttons .btn:first-of-type {
+    margin-bottom: 20px;
+  }
   .skill {
     padding: 20px;
   }
