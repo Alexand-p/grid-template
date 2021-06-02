@@ -500,7 +500,6 @@ html {
 
 /* HEADER */
 h1 {
-  font-size: 3.75rem;
   letter-spacing: 0.08em;
   font-weight: 300;
   font-family: 'Roboto Slab', serif;
@@ -1143,6 +1142,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+  h1 {
+    font-size: 3.75rem;
+  }
   .btn--light {
     font-size: 1.125rem;
     min-width: 250px;
@@ -1158,6 +1160,9 @@ footer {
 }
 
 @media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
@@ -1178,16 +1183,34 @@ footer {
   }
 }
 
+@media (max-width: 992px) and (min-width: 768px) {
+  .header-content__title {
+    margin: 0 0 43px;
+  }
+}
+
 @media (max-width: 991.8px) and (min-width: 768px) {
   .btn--light {
+    font-size: 1rem;
     min-width: 200px;
     padding: 14px 20px;
     height: 50px;
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.875rem;
+    margin: 0 0 33px 0px;
+  }
+  .header-content__title {
+    margin: 0 0 33px 0px;
+  }
+}
+
 @media (max-width: 767.8px) {
   .btn--light {
+    font-size: 1rem;
     min-width: 170px;
     padding: 9px 20px;
     height: 40px;
