@@ -179,9 +179,6 @@ a {
   padding: 20px 20px 20px 0;
 
 }
-
-
-
 .header-logo__accent {
   display: inline-block;
   border: 3px solid red;
@@ -189,39 +186,9 @@ a {
   margin-right: 4px;
 }
 
-.header-navbar{
-  display: grid;
-  align-items: center;
-  justify-content: end;
-}
-
-.header-navbar__list{
-  list-style: none;
-  padding: 0 -10px 0 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-
-}
-
-.header-navbar__item{
-  margin-left: 20px;
-}
-
-.header-navbar__link{
-  display: block;
-  padding: 20px 10px;
-  font-size: 18px;
-  transition: color 0.5s;
-}
-
 .header-navbar__link:hover{
   color: #d66926;
 }
-
-.header-navbar__btn{
-}
-
 .header-content{
   position: relative;
   z-index: 1;

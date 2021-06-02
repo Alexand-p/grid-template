@@ -473,6 +473,31 @@ template {
           justify-content: end;
 }
 
+.header-navbar__list {
+  list-style: none;
+  padding: 0 -10px 0 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.header-navbar__item {
+  margin-left: 20px;
+}
+
+.header-navbar__link {
+  display: block;
+  padding: 20px 10px;
+  font-size: 18px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.header-navbar:hover, .header-navbar:focus {
+  color: #d66926;
+}
+
 .header-navbar__btn {
   width: 30px;
   height: 22.5px;
@@ -736,37 +761,6 @@ a {
   border: 3px solid red;
   padding: 14px 1px 13px 5px;
   margin-right: 4px;
-}
-
-.header-navbar {
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.header-navbar__list {
-  list-style: none;
-  padding: 0 -10px 0 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-}
-
-.header-navbar__item {
-  margin-left: 20px;
-}
-
-.header-navbar__link {
-  display: block;
-  padding: 20px 10px;
-  font-size: 18px;
-  -webkit-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
 .header-navbar__link:hover {
