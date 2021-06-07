@@ -1,0 +1,20 @@
+.header-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  //height: 200px;
+  z-index: 2;
+
+&__container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  @include md{
+    background-color: rgba($color-gray-dark, 0.25);
+  }
+}
+  @include md{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  }
+}

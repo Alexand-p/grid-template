@@ -1,0 +1,210 @@
+footer{
+  background-color:#2d3651;
+
+&-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+&-item{
+
+
+
+&__text{
+  text-align: center;
+  &--app{
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+  }
+  &--down{
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0;
+    color: #ffffff;
+  }
+  &__icon{
+    display: flex;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 50px;
+    color: #ffffff;
+    font-size: 2.25em;
+    &--link{
+      padding: 10px;
+      &::after {
+        position: absolute;
+        width: 75px;
+        height: 2px;
+        content: "";
+        background-color: rgba(255, 255, 255, 0.1);
+        top: 60px;
+        left: -140px;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+  .footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+  }
+  &-item{
+
+
+
+  &__text{
+    text-align: center;
+  }
+  &__text--app{
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+  }
+  &__text--down{
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0;
+    color: #ffffff;
+  }
+  &__icon--link{
+    padding: 10px;
+  }
+  &__icon{
+    display: flex;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 50px;
+    color: #ffffff;
+    font-size: 2.25em;
+    &__icon::after {
+      position: absolute;
+      width: 75px;
+      height: 2px;
+      content: "";
+      background-color: rgba(255, 255, 255, 0.1);
+      top: 60px;
+      left: -140px;
+    }
+  }
+
+
+
+  }
+  .fab fa-facebook-square::before{
+    content:f082 ;
+  }
+  .fab fa-pinterest-square::before{
+    content:f0d3 ;
+  }
+  .fab fa-twitter-square::before{
+    content:f081 ;
+  }
+  .fab fa-google-plus-square::before{
+    content:f0d4 ;
+  }
+  .fab fa-flick::before{
+    content:f16e ;
+  }
+  .fab:hover{
+    color:#d66926 ;
+    transition: color 0.5s;
+  }
+.fab fa-facebook-square::before{
+  content:f082 ;
+}
+.fab fa-pinterest-square::before{
+  content:f0d3 ;
+}
+.fab fa-twitter-square::before{
+  content:f081 ;
+}
+.fab fa-google-plus-square::before{
+  content:f0d4 ;
+}
+.fab fa-flick::before{
+  content:f16e ;
+}
+.fab:hover{
+  color:#d66926 ;
+  transition: color 0.5s;
+}
+  footer{
+    background-color:#2d3651;
+  }
+  .footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+  }
+  .footer-item{
+
+  }
+
+  .footer-item__text{
+    text-align: center;
+  }
+  .footer-item__text--app{
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+  }
+  .footer-item__text--down{
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0;
+    color: #ffffff;
+  }
+  .footer-item__icon--link{
+    padding: 10px;
+  }
+  .footer-item__icon{
+    display: flex;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 50px;
+    color: #ffffff;
+    font-size: 2.25em;
+  }
+
+
+  .footer-item__icon::after {
+    position: absolute;
+    width: 75px;
+    height: 2px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 60px;
+    left: -140px;
+  }
+  .fab fa-facebook-square::before{
+    content:f082 ;
+  }
+  .fab fa-pinterest-square::before{
+    content:f0d3 ;
+  }
+  .fab fa-twitter-square::before{
+    content:f081 ;
+  }
+  .fab fa-google-plus-square::before{
+    content:f0d4 ;
+  }
+  .fab fa-flick::before{
+    content:f16e ;
+  }
+  .fab:hover{
+    color:#d66926 ;
+    transition: color 0.5s;
+  }

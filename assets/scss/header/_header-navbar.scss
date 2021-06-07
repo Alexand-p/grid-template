@@ -11,8 +11,12 @@
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
+    @include md-min{
+      display: none;
+    }
+
     & span:nth-child(2) {
-      top: 0px;
+      top: 0;
     }
 
     & span:nth-child(4) {
@@ -33,7 +37,7 @@
       transition: .25s ease-in-out;
 
       &:nth-child(1){
-        top: 0px;
+        top: 0;
       }
 
       &:nth-child(3) {
@@ -48,56 +52,76 @@
         border-radius: 0 3px 3px 0;
       }
       &:nth-child(odd) {
-        left:0px;
+        left:0;
         border-radius: 3px 0 0 3px;
       }
-      &--active{
-        & span:nth-child(1),& span:nth-child(6) {
+      &--active span{
+        &:nth-child(1),
+        &:nth-child(6) {
           transform: rotate(45deg);
         }
 
-        & span:nth-child(2),.& span:nth-child(5) {
+        &:nth-child(2),
+        &:nth-child(5) {
           transform: rotate(-45deg);
         }
 
-        & span:nth-child(1) {
+        &:nth-child(1) {
           left: 1.66px;
           top: 2.3px;
         }
 
-        & span:nth-child(2) {
+        &:nth-child(2) {
           left: calc(50% - 1.66px);
           top: 2.3px;
         }
 
-        & span:nth-child(3) {
+        &:nth-child(3) {
           left: -50%;
           opacity: 0;
         }
 
-        & span:nth-child(4) {
+        &:nth-child(4) {
           left: 100%;
           opacity: 0;
         }
 
-        & span:nth-child(5) {
+        &:nth-child(5) {
           left: 1.66px;
           top: 14.5px;
         }
 
-        & span:nth-child(6) {
+        &:nth-child(6) {
           left: calc(50% - 1.66px);
           top: 14.5px;
         }
       }
     }
+
   }
   &__list{
     list-style: none;
     padding: 0 -10px 0 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
+
+
+   @include md-min{
+     display: grid;
+     grid-template-columns: repeat(3, 100px);
+     width:100%;
+   }
+    @include md{
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: $gap / 2 * 3;
+      text-align: right;
+      background-color: rgba($color-gray-dark, 0.9);
+    }
+    //&.active{
+    //  display: block;
+    //  background-color: rgba($color-gray-dark, 0.9);
+    //}
   }
   &__item{
     margin-left: 20px;
@@ -108,11 +132,16 @@
     font-size: 18px;
     transition: color 0.5s;
   }
+  @include md-min{
+    padding: $gap($gap / 2);
+  }
+  @include md{
+    padding: $gap;
+  }
   &:hover,
   &:focus{
     color: $color-accent;
   }
 }
-
 
 

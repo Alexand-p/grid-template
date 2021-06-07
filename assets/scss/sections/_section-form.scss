@@ -1,0 +1,62 @@
+.forma{
+  min-height: 120px;
+  background-color: #2d3651;
+
+fieldset {
+  border:0 none
+}
+&-container{
+  display: grid;
+  grid-template-areas: "f1  f2  f3";
+  align-content: normal;
+  justify-content: normal;
+  grid-gap: 20px;
+}
+
+&-item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  &__name,
+  &__email,
+  .btn-&{
+    border: 2px solid rgba(255, 255, 255, 0);
+    font-size: 1.125rem;
+    min-height: 60px;
+    width: 100%;
+    padding-left: 30px;
+    background-color: #38405a;
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.05);
+    letter-spacing: 1.5px;
+    color: #607188;
+
+  }
+  &:nth-of-type(1){
+    grid-area: f1 ;
+  }
+  &:nth-of-type(2){
+    grid-area: f2 ;
+  }
+  &:nth-of-type(3){
+    grid-area: f3 ;
+  }
+  &__name:hover{
+    background-color:#4C546B ;
+    transition: background-color 0.5s;
+  }
+  &__email:hover{
+    background-color:#4C546B ;
+    transition: background-color 0.5s;
+  }
+}
+
+
+.btn-&{
+  background-color: #424a63;
+  padding: 18px;
+  text-align: center;
+  color: #ffffff;
+  transition:  background-color 0.5s, border 0.5s;
+}
+}
